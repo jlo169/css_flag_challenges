@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+body {
+    margin: 0;
+    background-color: white;
+}
+
+.container {
+    height: 100vh;
+    background-color: red;
+    position: relative;
+}
+
+.vertical {
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    transform: translateX(-50%);
+    width: 25vmin;
+    left: 30%;
+}
+
+.bluevertical {
+    background-color: navy;
+    position: absolute;
+    height: 100%;
+    transform: translateX(-50%);
+    width: 12vmin;
+    left: 30%;
+}
+
+.horizontal {
+    position: absolute;
+    background-color: white;
+    height: 25vmin;
+    transform: translateY(-50%);
+    width: 100%;
+    top: 50%;
+}
+
+.bluehorizontal {
+    background-color: navy;
+    position: absolute;
+    height: 12vmin;
+    transform: translateY(-50%);
+    width: 100%;
+    top: 50%;
+}
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="vertical"></div>
+        <div class="horizontal"></div>
+        <div class="bluevertical"></div>
+        <div class="bluehorizontal"></div>
+    </div>
+</body>
+</html>

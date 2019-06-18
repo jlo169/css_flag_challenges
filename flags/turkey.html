@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    background-color: red;
+    position: relative;
+}
+
+.circles {
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    height: 50%;
+    width: 50vmin;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 15%;
+}
+
+.redcircle {
+    background-color: red;
+    display: inline-block;
+    position: absolute;
+    height:80%;
+    width: 80%;
+    border-radius: 50%;
+    right: -2%;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.star {
+    display: inline-block;
+    position: absolute;
+    color: white;
+    font-size: 15rem;
+    left: 45%;
+    transform: translateY(-50%);
+    top: 30%;
+    transform: rotateZ(-20deg)
+}
+    
+    
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="circles">
+            <div class="redcircle"></div>
+        </div>
+        <div class="star">&starf;</div>
+    </div>
+    
+</body>
+</html>

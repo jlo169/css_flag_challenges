@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    font-size: 0;
+}
+
+.redcolumn {
+    background-color: red;
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+}
+
+.whitepart {
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.whitepart::before {
+    content: 'a';
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    background-image: url(../assets/images/canada_logo.png);
+    transform: rotateZ(28deg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 10%;
+}
+    
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="redcolumn first"></div>
+        <div class="whitepart"></div>
+        <div class="redcolumn second"></div>
+    </div>
+</body>
+</html>
